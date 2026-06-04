@@ -1,1 +1,1 @@
-export const STORAGE_PREFIX = 'draggable-ui';
+export const STORAGE_PREFIX = 'd_ui';
