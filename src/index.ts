@@ -11,6 +11,7 @@ export type {
   PositioningMode,
   DraggableUIProps,
   DraggableProps,
+  AutoModeOptions,
   UseDraggableOptions,
   UseDraggableReturn,
   DragContextType,

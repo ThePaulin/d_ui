@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { useDraggable } from '../hooks/useDraggable';
 import type { DraggableProps } from '../types';
 
-export function Draggable({
+function DraggableInner({
   children,
   id,
   defaultPosition,
@@ -47,3 +47,5 @@ export function Draggable({
 
   return child;
 }
+
+export const Draggable = React.memo(DraggableInner);

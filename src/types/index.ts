@@ -6,6 +6,7 @@ export type {
   DragContextType,
   DraggableUIProps,
   DraggableProps,
+  AutoModeOptions,
   UseDraggableOptions,
   UseDraggableReturn,
 } from './draggable';

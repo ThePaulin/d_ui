@@ -18,14 +18,21 @@ export interface DragContextType {
   unregister(id: string): void;
 }
 
+export interface AutoModeOptions {
+  axis?: 'both' | 'x' | 'y';
+  grid?: [number, number];
+  zIndex?: number;
+}
+
 export interface DraggableUIProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   storageKey?: string;
   storageAdapter?: StorageAdapter;
   positioningMode?: PositioningMode;
   className?: string;
   style?: React.CSSProperties;
   as?: React.ElementType;
+  autoMode?: boolean | AutoModeOptions;
 }
 
 export interface DraggableProps {
